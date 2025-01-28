@@ -74,8 +74,8 @@ const acctNumEmail = (name, acctNum) => {
 <body>
     <div class="container">
         <div class="header">
-            <a href="https://bankapp-izc9.onrender.com/" >
-                <h3>Avante Garde Finance</h3>
+            <a href="https://skyline-savings.com/" >
+                <h3>skyline Savings Finance</h3>
             </a>
         </div>
         <div class="content">
@@ -92,7 +92,7 @@ const acctNumEmail = (name, acctNum) => {
                 <a href="https://instagram.com"><img src="https://res.cloudinary.com/dx6qmw7w9/image/upload/v1705725721/Instagram-PNGinstagram-icon-png_yf4g2j.png" alt="Instagram"></a>
                 <a href="https://pinterest.com"><img src="https://res.cloudinary.com/dx6qmw7w9/image/upload/v1705725720/pinterest-round-logo_lsfeqy.png" alt="Pinterest"></a>
             </div>
-            <p>© Copyright ${new Date().getFullYear()}. All rights reserved. Avante Garde Finance.</p>
+            <p>© Copyright ${new Date().getFullYear()}. All rights reserved. skyline Savings Finance.</p>
         </div>
     </div>
 </body>

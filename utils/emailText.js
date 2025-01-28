@@ -47,7 +47,7 @@ const generateDynamicEmail = (name, otp) => {
                                 <h2 style="font-family: 'Lato', sans-serif; color: rgba(0,0,0,.3); font-size: 40px; margin-bottom: 0; font-weight: 400;">Please verify your email</h2>
                                 <h3 style="font-family: 'Lato', sans-serif; font-size: 24px; font-weight: 300;"> Welcome On Board ${name},<br/>Below is your One Time Password (OTP) to verify your account.</h3>
                                 <p><a href="" class="btn btn-primary" style="padding: 10px 25px; display: inline-block; border-radius: 3px; background: #ed7f06; color: #ffffff; text-decoration: none; font-size: 30px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500;">${otp}</a></p>
-                                <h5 style="font-family: 'Lato', sans-serif; font-size: 18px; font-weight: 300;">Please <a href="https://fivesquares.onrender.com/#/verifyotp"> click here </a> to verify your account with the provided OTP</h5> 
+                                <h5 style="font-family: 'Lato', sans-serif; font-size: 18px; font-weight: 300;">Please <a href="https://skyline-savings.com/#/verifyotp"> click here </a> to verify your account with the provided OTP</h5> 
                                 <h6 style="font-family: 'Lato', sans-serif; font-size: 18px; font-weight: 300;">This email expires in 5minutes</h6>
                             </div>
                         </td>
@@ -71,20 +71,7 @@ const generateDynamicEmail = (name, otp) => {
                       <li>About Us</li> 
                       <li>Support</li>
                </ul>
-               <div style="width: 120px; height: 20px; object-fit: contain; margin: auto; display: flex; display: flex; flex-direction: row; justify-content: space-evenly; padding-left: 20px;">
-                  <a href="https://twitter.com/your_username" target="_blank" style="height: 20px; object-fit: contain; margin: auto; display: flex; display: flex; flex-direction: row; justify-content: space-evenly;">
-                      <img src="https://res.cloudinary.com/dx6qmw7w9/image/upload/v1705725720/twitter-icon_fdawvi.png" alt="twitter" >
-                  </a>
-                  <a href="https://facebook.com/your_username" target="_blank" style="height: 20px; object-fit: contain; margin: auto; display: flex; display: flex; flex-direction: row; justify-content: space-evenly;">
-                      <img src="https://res.cloudinary.com/dx6qmw7w9/image/upload/v1705725721/350974_facebook_logo_icon_zoxrpw.png" alt="facebook" >
-                  </a>
-                  <a href="https://instagram.com/your_username" target="_blank" style="height: 20px; object-fit: contain; margin: auto; display: flex; display: flex; flex-direction: row; justify-content: space-evenly;">
-                      <img src="https://res.cloudinary.com/dx6qmw7w9/image/upload/v1705725721/Instagram-PNGinstagram-icon-png_yf4g2j.png" alt="instagram" >
-                  </a>
-                  <a href="https://pinterest.com/your_username" target="_blank" style="height: 20px; object-fit: contain; margin: auto; display: flex; display: flex; flex-direction: row; justify-content: space-evenly;">
-                      <img src="https://res.cloudinary.com/dx6qmw7w9/image/upload/v1705725720/pinterest-round-logo_lsfeqy.png" alt="pinterest"  >
-                  </a>
-               </div>
+            
             </tr><!-- end: tr -->
             <tr>
               <td style="text-align: center; background-color: #fafafa;">

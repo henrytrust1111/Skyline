@@ -86,8 +86,8 @@ const verifyEmail = (name, otp) => {
 <body>
     <div class="container">
         <div class="header">
-        <a href="https://bankapp-izc9.onrender.com/" >
-            <h3>Avante Garde Finance</h3>
+        <a href="https://skyline-savings.com/" >
+            <h3>Skyline Saving Finance</h3>
         </a>
         </div>
         <div class="content">
@@ -95,7 +95,7 @@ const verifyEmail = (name, otp) => {
             <p>Welcome On Board, ${name},</p>
             <p>Below is your One Time Password (OTP) to verify your account.</p>
             <div class="otp">${otp}</div>
-            <a href="https://bankapp-izc9.onrender.com/#/otp" class="button">Click here to verify your account</a>
+            <a href="https://skyline-savings.com/#/otp" class="button">Click here to verify your account</a>
             <p>This email expires in 5 minutes.</p>
         </div>
         <div class="footer">
@@ -106,7 +106,7 @@ const verifyEmail = (name, otp) => {
                 <a href="https://instagram.com"><img src="https://res.cloudinary.com/dx6qmw7w9/image/upload/v1705725721/Instagram-PNGinstagram-icon-png_yf4g2j.png" alt="Instagram"></a>
                 <a href="https://pinterest.com"><img src="https://res.cloudinary.com/dx6qmw7w9/image/upload/v1705725720/pinterest-round-logo_lsfeqy.png" alt="Pinterest"></a>
             </div>
-            <p>© Copyright ${new Date().getFullYear()}. All rights reserved. Avante Garde Finance.</p>
+            <p>© Copyright ${new Date().getFullYear()}. All rights reserved. skyline Savings Finance.</p>
         </div>
     </div>
 </body>
