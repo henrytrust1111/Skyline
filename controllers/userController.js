@@ -440,7 +440,7 @@ const loginWithPhoneNumber = async (req, res) => {
     await user.save();
     if (user.isVerified === true) {
       return res.status(200).json({
-        message: `Welcome to 5 Square, ${user.firstName}`,
+        message: `Welcome to Skyline, ${user.firstName}`,
         data: userData,
         token: token,
       });

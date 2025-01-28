@@ -75,7 +75,7 @@ const generateDynamicEmail = (name, otp) => {
             </tr><!-- end: tr -->
             <tr>
               <td style="text-align: center; background-color: #fafafa;">
-              © Copyright ${new Date().getFullYear()}. All rights reserved. 5 Square.<br/>
+              © Copyright ${new Date().getFullYear()}. All rights reserved. Skyline.<br/>
               </td>
             </tr>
           </table>

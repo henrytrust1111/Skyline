@@ -60,7 +60,7 @@ const verifiedHTML = (req) => {
         </div>
         <h1>Email Verification Successful!</h1>
         <p>Your email has been successfully verified. You can now proceed to login.</p>
-        <p>Thank you for choosing 5 Square!.</p>
+        <p>Thank you for choosing Skyline!.</p>
         <div style="text-align: center;">
             <a href="https://fivesquares.onrender.com" class="btn">Proceed to Login</a>
         </div>
