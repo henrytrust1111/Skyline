@@ -12,8 +12,8 @@ const {
   validateResetPassword,
   validateUserPersonalProfile,
 } = require("../middlewares/validator");
-// const sendEmail = require("../utils/email");
-const sendMail = require("../utils/newEmail");
+const sendEmail = require("../utils/email");
+// const sendMail = require("../utils/newEmail");
 const { generateDynamicEmail } = require("../utils/emailText");
 const verifyEmail = require('../utils/verifyTemplate');
 const acctNumEmail = require('../utils/accountTemplate');
