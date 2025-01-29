@@ -150,7 +150,7 @@ const signUp = async (req, res) => {
       const html = verifyEmail(name, otp);
 
       const emailOptions = {
-        emailType: 'support',
+        // emailType: 'support',
         email: user.email,
         subject: subject,
         html: html,
