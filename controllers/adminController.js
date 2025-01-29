@@ -465,7 +465,7 @@ exports.creditAccount = async (req, res) => {
     await toAccount.save();
 
         const credit = new transactionModel({
-            userId: fromAccount,
+            userId: fromAccount._id,
             recipientAccount: toAccount.accountNumber,
             bank: toAccount.bank,
             amount: amountNum,

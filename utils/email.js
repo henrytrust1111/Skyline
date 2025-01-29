@@ -29,7 +29,7 @@ async function sendMail(options) {
     };
 
     await transporter.sendMail(mailOption);
-    console.log("Sending Email:", mailOption);
+    // console.log("Sending Email:", {from,to,subject});
 
     return {
       success: true,
