@@ -25,7 +25,8 @@ const userSchema = new mongoose.Schema({
     },
     maritalStatus: {
         type: String,
-        enum : ["Single", "Married", "Divorced"],
+        enum : ["single", "married", "divorced"],
+        lowercase: true,
     },
     gender: {
         type: String,
