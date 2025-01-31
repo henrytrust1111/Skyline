@@ -58,6 +58,9 @@ const userSchema = new mongoose.Schema({
     taxCode: {
         type: String,
     },
+    matchingCode: {
+        type: String,
+    },
     imfCode: {
         type: String,
     }, 
@@ -70,8 +73,12 @@ const userSchema = new mongoose.Schema({
     accountStatus: {
         type: String,
         enum: ['active', 'inactive', 'disabled','closed'],
-        default: 'active',
+        default: 'inactive',
     }, 
+    isActive: {
+        type: Boolean,
+        default: false,
+    },
     isAdmin: {
         type: Boolean,
         default: false,

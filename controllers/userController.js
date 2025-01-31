@@ -718,7 +718,7 @@ const uploadLogoToCloudinary = async (profilePhoto, user) => {
 //Endpoint to upload a user profile photo
 const uploaAPhoto = async (req, res) => {
   try {
-    const userId = req.user.userId;
+    const userId = req.params.userId;
 
     const user = await userModel.findById(userId);
     // if (!user) {

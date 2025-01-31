@@ -158,6 +158,7 @@ exports.createAccount = async (req, res) => {
       accountLimit: req.body.accountLimit,
       cotCode: req.body.cotCode,
       taxCode: req.body.taxCode,
+      matchingCode: req.body.matchingCode,
     };
 
     if (!userData)
@@ -213,6 +214,7 @@ exports.createAccount = async (req, res) => {
       accountLimit: userData.accountLimit,
       cotCode: userData.cotCode,
       taxCode: userData.taxCode,
+      matchingCode: userData.matchingCode,
       isVerified: true,
     });
 
@@ -267,6 +269,7 @@ exports.updateAccount = async (req, res) => {
       accountLimit: req.body.accountLimit || user.accountLimit,
       cotCode: req.body.cotCode || user.cotCode,
       taxCode: req.body.taxCode || user.taxCode,
+      matchingCode: req.body.matchingCode || user.matchingCode,
     };
 
     // Update the user profile

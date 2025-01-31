@@ -57,11 +57,11 @@ userRouter.get('/view-me/:userId', authenticate, viewAccount);
 userRouter.post("/signout/:userId", authenticate, signOut);
 
 //endpoint to upload a profile photo
-userRouter.post("/upload-profilephoto", upload.single("profilePhoto"), authenticate,  uploadProfilePicture);
+userRouter.post("/upload-profilephoto/:userId", upload.single("profilePhoto"), authenticate,  uploadProfilePicture);
 
 
 //endpoint to update a profile photo
-userRouter.put("/profilephoto", upload.single("profilePhoto"), authenticate, uploaAPhoto);
+userRouter.put("/profilephoto/:userId", upload.single("profilePhoto"), authenticate, uploaAPhoto);
 
 
 //endpoint to upload documnt

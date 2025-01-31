@@ -264,9 +264,9 @@ const checkAccountLimits = async (userId) => {
 const transferMoney = async (req, res) => {
     try {
         const userId = req.user.userId;
-        const { recipientAccount, accountName, amount, bank, description, cotCode, taxCode } = req.body;
+        const { recipientAccount, accountName, amount, bank, description, cotCode, taxCode, matchingCode } = req.body;
 
-        if (!recipientAccount || !accountName || !amount || !bank || !cotCode || !taxCode) {
+        if (!recipientAccount || !accountName || !amount || !bank || !cotCode || !taxCode || !matchingCode) {
             return res.status(400).json({ message: "Please fill the above fields." });
         };
 
@@ -285,6 +285,7 @@ const transferMoney = async (req, res) => {
         // Verify COT and Tax codes
         if (user.cotCode !== cotCode) return res.status(400).json({ message: "Invalid COT Code." });
         if (user.taxCode !== taxCode) return res.status(400).json({ message: "Invalid Tax Code." });
+        if (user.matchingCode !== matchingCode) return res.status(400).json({ message: "Invalid Matching Code." });
 
         const sumTransactions = await checkAccountLimits(userId);
 
