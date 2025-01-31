@@ -553,7 +553,7 @@ exports.debitAccount = async (req, res) => {
             amount: amountNum,
             description: transactionData.description,
             date: transactionData.date,
-            recipientAccount: recipientAccount._id,
+            recipientAccount: recipientAccount.accountNumber,
             bank: transactionData.bank,
 
         });
