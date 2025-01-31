@@ -89,7 +89,8 @@ const userSchema = new mongoose.Schema({
     },
     accountType : {
         type: String,
-        enum:["savings", "current"]
+        enum:["savings", "current"],
+        lowercase: true,
     },
     accountLimit: {
         type: Number,
