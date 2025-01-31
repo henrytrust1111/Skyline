@@ -13,7 +13,7 @@ exports.accountStatus = async (req, res, next) => {
     }
     // if (!user) return res.status(404).json({ message: 'User not found' });
 
-    const accountStatus = user.accountStatus;
+    const accountStatus = user?.accountStatus;
 
     if (accountStatus === 'active') {
         next(); // allow the request to proceed
