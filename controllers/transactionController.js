@@ -252,7 +252,7 @@ const checkAccountLimits = async (userId) => {
         if (!sumTransactions) throw new Error('Unable to sum transactions!');
 
         //return the total transactions for the current month
-        return sumTransactions;
+        return sumTransactions ? sumTransactions : 0;
 
     } catch (error) {
         throw new Error('Error checking account limit: ' + error.message);
