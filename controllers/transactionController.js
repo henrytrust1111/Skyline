@@ -244,15 +244,20 @@ const checkAccountLimits = async (userId) => {
             },
         })
 
-        if (!getTransactions.length) throw new Error('No transactions found for this month!');
+        if (!getTransactions.length) {
+          
+            return 0;
 
-        // Calculate total transaction amount
-        const sumTransactions = getTransactions.reduce((total, transaction) => total + transaction.amount, 0);
+        } else {
+          
+          // Calculate total transaction amount
+          const sumTransactions = getTransactions.reduce((total, transaction) => total + transaction.amount, 0);
 
-        if (!sumTransactions) throw new Error('Unable to sum transactions!');
+          if (!sumTransactions) throw new Error('Unable to sum transactions!');
 
-        //return the total transactions for the current month
-        return sumTransactions ? sumTransactions : 0;
+          //return the total transactions for the current month
+          return sumTransactions ? sumTransactions : 0;
+        }
 
     } catch (error) {
         throw new Error('Error checking account limit: ' + error.message);
