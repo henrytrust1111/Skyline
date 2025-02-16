@@ -53,6 +53,7 @@ const userSchema = new mongoose.Schema({
     },
     accountCurrency: {
         type: String,
+        default: "$",
     },
     cotCode: {
         type: String,
